@@ -41,7 +41,6 @@ CleanStore/
 - **Entity Framework Core** - ORM para acesso a dados
 - **MediatR** - Padrão Mediator para CQRS
 - **FluentValidation** - Validação de dados
-- **AutoMapper** - Mapeamento de objetos
 - **xUnit** - Framework de testes
 - **Swagger/OpenAPI** - Documentação da API
 
@@ -101,21 +100,6 @@ Execute testes com relatório de cobertura:
 
 ```bash
 dotnet test --collect:"XPlat Code Coverage"
-```
-
-## 📦 Build e Deploy
-
-### Build de Produção
-
-```bash
-dotnet publish -c Release -o ./publish
-```
-
-### Docker
-
-```bash
-docker build -t cleanstore .
-docker run -p 8080:8080 cleanstore
 ```
 
 ## 🙏 Agradecimentos
