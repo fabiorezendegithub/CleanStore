@@ -210,8 +210,8 @@ Se houver erros de build, verifique:
 
 ## 🎯 Próxima Etapa
 
-Na [Etapa 2](etapa-02-camada-dominio.md), vamos implementar a camada de domínio com as entidades, value objects e regras de negócio.
+Na [Etapa 2](etapa-02-dominios-e-contexto.md), vamos implementar a camada de domínio com as entidades, value objects e regras de negócio.
 
 ---
 
-[← Voltar ao README](../README.md) | [Próxima Etapa →](etapa-02-camada-dominio.md)
+[← Voltar ao README](../README.md) | [Próxima Etapa →](etapa-02-dominios-e-contextos.md)

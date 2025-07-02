@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanStore.Domain", "CleanS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanStore.Infrastructure", "CleanStore.Infrastructure\CleanStore.Infrastructure.csproj", "{AADA0528-214E-49DA-9F89-444C65F0768B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanStore.Pwa", "CleanStore.Pwa\CleanStore.Pwa.csproj", "{9006C70A-66C8-4FDD-86C6-B3ABCA0FE911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{AADA0528-214E-49DA-9F89-444C65F0768B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AADA0528-214E-49DA-9F89-444C65F0768B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AADA0528-214E-49DA-9F89-444C65F0768B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9006C70A-66C8-4FDD-86C6-B3ABCA0FE911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9006C70A-66C8-4FDD-86C6-B3ABCA0FE911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9006C70A-66C8-4FDD-86C6-B3ABCA0FE911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9006C70A-66C8-4FDD-86C6-B3ABCA0FE911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

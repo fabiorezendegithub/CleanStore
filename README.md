@@ -50,12 +50,7 @@ CleanStore/
 O desenvolvimento deste projeto está dividido em etapas documentadas:
 
 - **[Etapa 1](docs/etapa-01-estrutura-basica.md)** - Criação da Estrutura Básica do Projeto
-- **[Etapa 2](docs/etapa-02-camada-dominio.md)** - Implementação da Camada de Domínio
-- **[Etapa 3](docs/etapa-03-camada-aplicacao.md)** - Desenvolvimento da Camada de Aplicação
-- **[Etapa 4](docs/etapa-04-camada-infraestrutura.md)** - Configuração da Camada de Infraestrutura
-- **[Etapa 5](docs/etapa-05-camada-api.md)** - Criação da API REST
-- **[Etapa 6](docs/etapa-06-testes.md)** - Implementação de Testes
-- **[Etapa 7](docs/etapa-07-deploy.md)** - Deploy e Configurações de Produção
+- **[Etapa 2](docs/etapa-02-dominios-e-contextos.md)** - Implementação estrutura de pastas de dominio e contexto
 
 ## ⚡ Início Rápido
 
@@ -143,8 +138,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 🙏 Agradecimentos
 
-- [Robert C. Martin](https://blog.cleancoder.com/) - Pelos conceitos de Clean Architecture
-- Comunidade .NET - Pelas contribuições e feedback
+- [Andre Baltieri](https://github.com/balta-io/2506) - Pelos conceitos de Clean Architecture
 
 ---
 
