@@ -9,8 +9,10 @@
   <ItemGroup>
     <Folder Include="AccountContext\Entities\" />
     <Folder Include="AccountContext\ValueObjects\" />
-    <Folder Include="SharedContext\Entities\" />
-    <Folder Include="SharedContext\ValueObjects\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
   </ItemGroup>
 
 </Project>

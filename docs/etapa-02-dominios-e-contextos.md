@@ -65,8 +65,8 @@ Esta padronização facilita:
 - Onboarding de novos desenvolvedores
 - Aplicação consistente dos princípios de Clean Architecture
 
-Na [Etapa 3](etapa-03.md), vamos atuar nas entidades e objetos de valor.
+Na [Etapa 3](etapa-03-entidade-e-objeto-valor.md), vamos atuar nas entidades e objetos de valor.
 
 ---
 
-[← Voltar ao README](../README.md) | [← Voltar a etapa 1](etapa-01-estrutura-basica.md) | [Próxima Etapa →](etapa-03.md)
+[← Voltar ao README](../README.md) | [← Voltar a etapa 1](etapa-01-estrutura-basica.md) | [Próxima Etapa →](etapa-03-entidade-e-objeto-valor.md)
