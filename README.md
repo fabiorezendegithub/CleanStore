@@ -52,6 +52,7 @@ O desenvolvimento deste projeto está dividido em etapas documentadas:
 - **[Etapa 2](docs/etapa-02-dominios-e-contextos.md)** - Implementação estrutura de pastas de dominio e contexto
 - **[Etapa 3](docs/etapa-03-entidade-e-objeto-valor.md)** - Criando entidade e objeto valor no shared
 - **[Etapa 4](docs/etapa-04-domain-events.md)** - Domain Events
+- **[Etapa 5](docs/etapa-05-lidando-com-erros.md)** - Lidando com erros
 
 ## ⚡ Início Rápido
 

@@ -189,4 +189,4 @@ Na próxima etapa, implementaremos o tratamento de erros e exceções personaliz
 
 ---
 
-[← Voltar ao README](../README.md) | [← Voltar à etapa 3](etapa-03-entidade-e-objeto-valor.md) | [Próxima Etapa →](etapa-05.md)
+[← Voltar ao README](../README.md) | [← Voltar à etapa 3](etapa-03-entidade-e-objeto-valor.md) | [Próxima Etapa →](etapa-05-lidando-com-erros.md)

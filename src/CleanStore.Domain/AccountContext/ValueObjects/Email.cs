@@ -1,5 +1,6 @@
 using System.Text.RegularExpressions;
 using CleanStore.Domain.AccountContext.Exceptions;
+using CleanStore.Domain.SharedContext.Extensions;
 using CleanStore.Domain.SharedContext.ValueObjects;
 
 namespace CleanStore.Domain.AccountContext.ValueObjects;
@@ -67,13 +68,10 @@ public partial record Email : ValueObject
     
     #endregion
     
-    #region Other
+    #region Others
     
     [GeneratedRegex(Pattern)]
     private static partial Regex EmailRegex();
     
-    #endregion
-    
-    #region Public Methods
     #endregion
 }
