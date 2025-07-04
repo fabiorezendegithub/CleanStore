@@ -73,6 +73,108 @@ public abstract class Entity
     public void RaiseDomainEvent(IDomainEvent @event) => _domainEvents.Add(@event);
 }
 ```
+3 - Gerando DomainException
+Esta será uma classe de marcação
+
+Em src > SharedContext > Exceptions > DomainException.cs
+
+```csharp
+public class DomainException(string message) : Exception(message);
+```
+
+4 - Agora criamos as classes de marcação de Account Context
+
+Em src > AccountContext > Exceptions > EmailNullOrEmptyException
+
+```csharp
+public class EmailNullOrEmptyException(string message) : DomainException(message);
+```
+
+Em src > AccountContext > Exceptions > InvalidEmailException
+
+```csharp
+public class InvalidEmailException(string message) : DomainException(message);
+```
+
+5 - Criando o Value Object email (por hora ainda não está completo, mas posteriormente iremos completá-lo)
+
+Criar em src > AccountContext > ValueObjects > Email
+
+```csharp
+public partial record Email : ValueObject
+{
+    #region Constants
+    
+    public const int MinLength = 6;
+    public const int MaxLength = 160;
+    public const string Pattern = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+
+    #endregion
+    
+    #region Constructors
+    
+    private Email()
+    {
+    }
+
+    private Email(string address, string hash)
+    {
+        Address = address;
+        Hash = hash;
+    }
+    
+    #endregion
+    
+    #region Factories
+    
+    public static Email Create(string address)
+    {
+        if (string.IsNullOrEmpty(address) || string.IsNullOrWhiteSpace(address))
+            throw new EmailNullOrEmptyException(ErrorMessages.Email.NullOrEmpty);
+        
+        address = address.Trim();
+        address = address.ToLower();
+        
+        if (!EmailRegex().IsMatch(address))
+            throw new InvalidEmailException(ErrorMessages.Email.Invalid);
+
+        return new Email(address, address.ToBase64());
+    }
+
+    #endregion
+    
+    #region Properties
+    
+    public string Address { get; private set; } = string.Empty;
+    public string Hash { get; private set; } = string.Empty;
+    
+    #endregion
+    
+    #region Operators
+    
+    public static implicit operator string(Email email) 
+        => email.ToString();
+    
+    #endregion
+    
+    #region Overrides
+    
+    public override string ToString() 
+        => Address;
+    
+    #endregion
+    
+    #region Other
+    
+    [GeneratedRegex(Pattern)]
+    private static partial Regex EmailRegex();
+    
+    #endregion
+    
+    #region Public Methods
+    #endregion
+}
+```
 
 ## Benefícios dos Domain Events
 
